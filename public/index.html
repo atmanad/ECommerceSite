@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GH00ST</title>
+  <!-- icon -->
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    figcaption {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* carousel */
+    .carousel-container {
+      width: 100%;
+      position: relative;
+      margin: auto;
+    }
+
+    .my-slides {
+      display: none;
+    }
+
+    /* Fading animation */
+    .fading {
+      -webkit-animation-name: fading;
+      -webkit-animation-duration: 4s;
+      animation-name: fading;
+      animation-duration: 4s;
+    }
+
+    @-webkit-keyframes fading {
+      from {
+        opacity: 1;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fading {
+      from {
+        opacity: 1;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .heading {
+      font-family: cursive;
+      font-weight: 900;
+      font-size: 25px;
+    }
+
+    .sub-text {
+      font-family: cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-theme">
+    <nav class="navbar navbar-expand-lg ml-md-3">
+      <div class="col-auto"><a href="index.html" class="navbar-brand">GH00ST</a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navbar" aria-expanded="false" aria-controls="collapsible-navbar"><i class="fas fa-align-right text-white"></i></button>
+      <div class="col-md-7 d-none d-md-block"><input type="text" class="form-control" id="search" placeholder="Search for products"></div>
+      <div class="col-auto px-md-0 px-lg-2">
+        <a href="#" data-toggle="modal" data-target="#signIn-Up" aria-hidden="true">
+          <div class="row ml-md-3">
+            <div class="col-auto my-auto"><i class="far fa-user fa-lg"></i></div>
+            <div class="col-auto p-0 d-none d-lg-block">
+              <div class="up-text">Hello, Sign in</div>
+              <div class="down-text">My Account</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-auto px-md-0 px-lg-2">
+        <a href="#">
+          <div class="row ml-md-3">
+            <div class="col-auto my-auto"><i class="fas fa-cart-plus fa-lg"></i></div>
+            <div class="col-auto p-0 d-none d-lg-block">
+              <div class="up-text">My Cart</div>
+              <div class="down-text">₹6999</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg p-0 p-md-3 ml-2">
+      <div class="collapse navbar-collapse" id="collapsible-navbar">
+        <div class="col-11 d-md-none"><input type="text" class="form-control" id="search" placeholder="Search for products"></div>
+        <ul class="navbar-nav text-white">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link" id="mobiles">Electronics</a>
+            <div class="dropdown-menu" aria-labelledby="mobiles">
+              <a href="mobiles.html" class="dropdown-item">Mobiles</a>
+              <a href="#" class="dropdown-item">Mobiles Accessories</a>
+              <a href="#" class="dropdown-item">Gaming & Accessories</a>
+              <a href="#" class="dropdown-item">Laptops</a>
+              <a href="#" class="dropdown-item">Desktop PCs</a>
+              <a href="#" class="dropdown-item">Computer Accessories</a>
+              <a href="#" class="dropdown-item">Tablets</a>
+              <a href="#" class="dropdown-item">Camera</a>
+              <a href="#" class="dropdown-item">Camera Accessories</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link" id="appliances">TV & Appliances</a>
+            <div class="dropdown-menu" aria-labelledby="appliances">
+              <a href="#" class="dropdown-item">Television</a>
+              <a href="#" class="dropdown-item">Air Conditioners</a>
+              <a href="#" class="dropdown-item">Washing Machine</a>
+              <a href="#" class="dropdown-item">Refrigerators</a>
+              <a href="#" class="dropdown-item">Kitchen Appliances</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link" id="men">Men</a>
+            <div class="dropdown-menu" aria-labelledby="men">
+              <a href="#" class="dropdown-item">Clothing</a>
+              <a href="#" class="dropdown-item">Ethnic wear</a>
+              <a href="#" class="dropdown-item">Top wear</a>
+              <a href="#" class="dropdown-item">Watches</a>
+              <a href="#" class="dropdown-item">Inner wear</a>
+              <a href="#" class="dropdown-item">Bottom wear</a>
+              <a href="#" class="dropdown-item">Footwear</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link" id="women">Women</a>
+            <div class="dropdown-menu" aria-labelledby="women">
+              <a href="#" class="dropdown-item">Clothing</a>
+              <a href="#" class="dropdown-item">Ethnic wear</a>
+              <a href="#" class="dropdown-item">Footwear</a>
+              <a href="#" class="dropdown-item">Beauty & Grooming</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link" id="books">Books</a>
+            <div class="dropdown-menu" aria-labelledby="books">
+              <a href="#" class="dropdown-item">Entrance Exams</a>
+              <a href="#" class="dropdown-item">Academics</a>
+              <a href="#" class="dropdown-item">Self Help</a>
+              <a href="#" class="dropdown-item">E-Learning</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link" id="furnitures">Home & Furnitures</a>
+            <div class="dropdown-menu" aria-labelledby="furnitures">
+              <a href="#" class="dropdown-item">Kitchen,Cookware</a>
+              <a href="#" class="dropdown-item">Beds</a>
+              <a href="#" class="dropdown-item">Sofa</a>
+              <a href="#" class="dropdown-item">furnitures</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- sign in/up -->
+  <!-- Modal -->
+  <div class="modal fade" id="signIn-Up" tabindex="-1" role="dialog" aria-labelledby="signIn/Up" aria-hidden="true">
+    <div class="modal-dialog mw-360" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="nav nav-tabs">
+            <a href="#sign-in" class="nav-item nav-link active" data-toggle="tab" role="tab" aria-selected="true">Sign In</a>
+            <a href="#sign-up" class="nav-item nav-link" data-toggle="tab" role="tab" aria-selected="false">Sign Up</a>
+          </div>
+          <div class="tab-content">
+            <!-- Sign in -->
+            <div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="sign-in">
+              <form class="mt-4 mb-2">
+                <div class="input-group my-3">
+                  <input type="email" id="text" class="form-control" placeholder="Email / Phone"><i class="fas fa-envelope"></i>
+                </div>
+                <div class="input-group">
+                  <input type="password" id="password" class="form-control" placeholder="Password"><i class="fas fa-lock"></i>
+                </div>
+                <div class="d-flex justify-content-between my-3">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                  </div>
+                  <div><a href="#" data-toggle="modal" data-target="#modalForgotPassword" data-dismiss="modal" aria-hidden="true">Forgot password?</a></div>
+                </div>
+                <button class="btn btn-theme btn-block mt-2 btn-rounded" type="button" id="signIn">Sign In</button>
+              </form>
+            </div>
+            <!-- Sign up -->
+            <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up">
+              <form class="mt-4 mb-2" id="signUpForm">
+                <div class="input-group my-3"><input type="text" id="sFName" class="form-control" placeholder="Name"><i class="fas fa-user"></i></div>
+                <div class="input-group"><input type="email" id="sEmail" class="form-control" placeholder="E-mail"><i class="fas fa-envelope"></i></div>
+                <div class="input-group my-3"><input type="number" id="sPhone" class="form-control" placeholder="Phone number"><i class="fas fa-phone-alt"></i></div>
+                <div class="input-group"><input type="password" class="form-control" id="sPassword" placeholder="Password"><i class="fas fa-lock"></i></div>
+                <button class="btn btn-theme mt-3 btn-block" type="button" id="signUp">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <div class="carousel-container">
+    <div class="my-slides fading my-4">
+      <div class="row container mx-sm-auto mr-lg-0">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <p class="heading">Learn and Collaborate on A Modern PC with SSD</p>
+          <p class="sub-text">It's now or never</p>
+          <button class="btn btn-theme">SHOP NOW</button>
+        </div>
+        <div class="col-sm-6 col-lg-8 text-center"><img src="img/omen.jpg" class="img-fluid"></div>
+      </div>
+    </div>
+    <div class="my-slides fading my-4">
+      <div class="row container mx-sm-auto mr-lg-0">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <p class="heading">Powerful Performance on the go</p>
+          <p class="sub-text">Intel powered Laptops</p>
+          <button class="btn btn-theme">SHOP NOW</button>
+        </div>
+        <div class="col-sm-6 col-lg-8 text-center"><img src="img/rog.jpg" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+    <div class="my-slides fading my-4">
+      <div class="row container mx-sm-auto mr-lg-0">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <p class="heading">Powerful Performance on the go</p>
+          <p class="sub-text">Intel powered Laptops</p>
+          <button class="btn btn-theme">SHOP NOW</button>
+        </div>
+        <div class="col-sm-6 col-lg-8 text-center"><img src="img/dell.jpg" class="img-fluid" alt=""></div>
+      </div>
+    </div>
+    <div class="my-slides fading my-4">
+      <div class="row container mx-auto mr-lg-0">
+        <div class="col-sm-6 col-lg-4 text-center">
+          <p class="heading">Boost your Gaming</p>
+          <p class="sub-text">With Asus ROG</p>
+          <button class="btn btn-theme">SHOP NOW</button>
+        </div>
+        <div class="col-sm-6 col-lg-8 text-center"><img src="img/rog-2.jpg" class="img-fluid" alt="" style="max-height: 215px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ================================== main body ============================================= -->
+  <hr>
+  <div class="d-flex justify-content-between mx-3">
+    <h2 class="card-title">Trending Products</h2>
+    <a href="#">More categories</a>
+  </div>
+  <div class="container mb-3">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+          <img src="img/sony-headphone.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="text-muted mb-1">Headphones</p>
+            <h6 class="card-title">Wireless Bluetooth headphones</h6>
+            <a href="#" class="btn btn-outline-theme btn-sm btn-block"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+          <img src="img/tv.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="text-muted mb-1">Headphones</p>
+            <h6 class="card-title">Wireless Bluetooth headphones</h6>
+            <a href="#" class="btn btn-outline-theme btn-sm btn-block"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+          <img src="img/speaker.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="text-muted mb-1">Headphones</p>
+            <h6 class="card-title">Wireless Bluetooth headphones</h6>
+            <a href="#" class="btn btn-outline-theme btn-sm btn-block"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+          <img src="img/airport.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <p class="text-muted mb-1">Headphones</p>
+            <h6 class="card-title">Wireless Bluetooth headphones</h6>
+            <a href="#" class="btn btn-outline-theme btn-sm btn-block"><i class="fas fa-shopping-cart mr-2"></i>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row mx-auto my-5 bg-faded">
+    <div class="col-lg-4 ml-md-5">
+      <div class="m-5">
+        <button class="btn btn-sm btn-warning">Limited offer</button>
+        <h5 class="text-muted mt-3">All New</h5>
+        <h4>Next Gen Ipad Pro</h4>
+        <h5 class="text-muted">at discounted price. Hurry up!</h5>
+        <button class="btn btn-accent">View offers</button>
+      </div>
+    </div>
+    <div class="col-lg-7">
+      <img src="img/ipad.jpg" class="img-fluid text-right" alt="">
+    </div>
+  </div>
+  <!-- shop by brands -->
+  <div class="container-fluid row p-0 mx-auto">
+    <div class="col-6 col-md-3 p-0">
+      <div class="card"><img src="img/canon.png" class="img-fluid" alt=""></div>
+    </div>
+    <div class="col-6 col-md-3 p-0">
+      <div class="card"><img src="img/sony.png" class="img-fluid" alt=""></div>
+    </div>
+    <div class="col-6 col-md-3 p-0">
+      <div class="card"><img src="img/microsoft.png" class="img-fluid" alt=""></div>
+    </div>
+    <div class="col-6 col-md-3 p-0">
+      <div class="card"><img src="img/dji.png" class="img-fluid" alt=""></div>
+    </div>
+  </div>
+
+  <div class="continer-fluid row p-0 mx-auto my-4">
+    <div class="col-sm-6 col-md-4">
+      <div class="card bg-faded-success">
+        <div class="row">
+          <div class="col-6">
+            <div class="pt-5 pl-4">
+              <h5 class="text-muted">Next Gen Video</h5>
+              <h6>With 360 Cam</h6>
+              <p style="color:#42d697">Shop Now</p>
+            </div>
+          </div>
+          <div class="col-6"><img src="img/cam.png" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="card bg-faded-warning">
+        <div class="row">
+          <div class="col-6">
+            <div class="pt-5 pl-4">
+              <h5 class="text-muted">Top Gadgets</h5>
+              <h6>on Sale</h6>
+              <p style="color:#fea569">Shop Now</p>
+            </div>
+          </div>
+          <div class="col-6"><img src="img/iphone.png" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 mt-sm-3 mt-md-0">
+      <div class="card bg-faded-info">
+        <div class="row">
+          <div class="col-6">
+            <div class="pt-5 pl-4">
+              <h5 class="text-muted">Big Deals</h5>
+              <h6>on Ear-Buds</h6>
+              <p style="color:#69b3fe">Shop Now</p>
+            </div>
+          </div>
+          <div class="col-6"><img src="img/ear-phone.png" class="img-fluid" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-5 row">
+    <!-- col-1 -->
+    <div class="col-sm-6 col-lg-4">
+      <h6>Best Seller</h6>
+      <div class="row">
+        <div class="col-auto"><img src="img/security.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Lorem Ipsium</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/bluetooth.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Lorem Ipsium</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/smart-box.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Lorem Ipsium</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/smart-watch.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Lorem Ipsium</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+    </div>
+    <!-- col-2 -->
+    <div class="col-sm-6 col-lg-4">
+      <h6>New Arrivals</h6>
+      <div class="row">
+        <div class="col-auto"><img src="img/smartphone.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Samsung S10</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/desktop.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Monoblock Desktop</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/printer.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Laserjet Printer</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/controller.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Console Controller</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+    </div>
+    <!-- col-3 -->
+    <div class="col-sm-6 col-lg-4 mt-sm-3 mt-lg-0">
+      <h6>Top Rated</h6>
+      <div class="row">
+        <div class="col-auto"><img src="img/wireless.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Wireless Headphone</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/360-cam.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">360 Degrees Camera</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/nikon.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Digital Camera 40MP</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-auto"><img src="img/s9.jpg" class="img-flid" alt="" height="64"></div>
+        <div class="col-auto p-0">
+          <p class="mb-1">Samsung S9</p>
+          <p class="text-primary">₹699</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-theme pt-4 mt-4">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4 te">ABOUT</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <!-- <hr class="bg-white w-100 d-md-none"> -->
+        <div class="col-6 col-sm-4 col-md mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">HELP</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Payments</a>
+            </li>
+            <li>
+              <a href="#!">Shipping</a>
+            </li>
+            <li>
+              <a href="#!">Cancellation and Returns</a>
+            </li>
+            <li>
+              <a href="#!">Report an issue</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="bg-white w-100 d-sm-none">
+        <div class="col-6 col-sm-4 col-md mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">POLICY</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Return Policy</a>
+            </li>
+            <li>
+              <a href="#!">Time of use</a>
+            </li>
+            <li>
+              <a href="#!">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="bg-white w-100 d-none d-sm-block d-md-none">
+        <div class="col-6 col-sm-4 col-md mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-4">Mail us:</h5>
+          <p>Ghost-Gang, Berhampur</p>
+        </div>
+        <!-- <hr class="clearfix w-100 d-md-none"> -->
+        <div class="col-6 col-sm-4 col-md mx-auto">
+          <h5 class="font-weight-bold mt-3 mb-lg-4">Registered office</h5>
+          <p>Office address</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <!-- custom scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    //carousel
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("my-slides");
+    slideShow();
+    function slideShow() {
+      slides[slideIndex].style.display = 'none';
+      slideIndex++;
+      if (slideIndex > slides.length - 1) { slideIndex = 0 };
+      slides[slideIndex].style.display = 'block';
+      setTimeout(slideShow, 4000);
+    }
+  </script>
+</body>
+
+</html>

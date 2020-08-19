@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH00ST | MOBILES</title>
+    <!-- icon -->
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header class="bg-theme">
+        <nav class="navbar navbar-expand-lg ml-md-3">
+            <div class="col-auto"><a href="index.html" class="navbar-brand">GH00ST</a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navbar" aria-expanded="false" aria-controls="collapsible-navbar"><i class="fas fa-align-right text-white"></i></button>
+            <div class="col-md-7 d-none d-md-block"><input type="text" class="form-control" id="search" placeholder="Search for products"></div>
+            <div class="col-auto px-md-0 px-lg-2">
+                <a href="#" data-toggle="modal" data-target="#signIn-Up" aria-hidden="true">
+                    <div class="row ml-md-3">
+                        <div class="col-auto my-auto"><i class="far fa-user fa-lg"></i></div>
+                        <div class="col-auto p-0 d-none d-lg-block">
+                            <div class="up-text">Hello, Sign in</div>
+                            <div class="down-text">My Account</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto px-md-0 px-lg-2">
+                <a href="#">
+                    <div class="row ml-md-3">
+                        <div class="col-auto my-auto"><i class="fas fa-cart-plus fa-lg"></i></div>
+                        <div class="col-auto p-0 d-none d-lg-block">
+                            <div class="up-text">My Cart</div>
+                            <div class="down-text">₹6999</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg p-0 p-md-3 ml-2">
+            <div class="collapse navbar-collapse" id="collapsible-navbar">
+                <div class="col-11 d-md-none"><input type="text" class="form-control" id="search" placeholder="Search for products"></div>
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" id="mobiles">Electronics</a>
+                        <div class="dropdown-menu" aria-labelledby="mobiles">
+                            <a href="mobiles.html" class="dropdown-item">Mobiles</a>
+                            <a href="#" class="dropdown-item">Mobiles Accessories</a>
+                            <a href="#" class="dropdown-item">Gaming & Accessories</a>
+                            <a href="#" class="dropdown-item">Laptops</a>
+                            <a href="#" class="dropdown-item">Desktop PCs</a>
+                            <a href="#" class="dropdown-item">Computer Accessories</a>
+                            <a href="#" class="dropdown-item">Tablets</a>
+                            <a href="#" class="dropdown-item">Camera</a>
+                            <a href="#" class="dropdown-item">Camera Accessories</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link" id="appliances">TV & Appliances</a>
+                        <div class="dropdown-menu" aria-labelledby="appliances">
+                            <a href="#" class="dropdown-item">Television</a>
+                            <a href="#" class="dropdown-item">Air Conditioners</a>
+                            <a href="#" class="dropdown-item">Washing Machine</a>
+                            <a href="#" class="dropdown-item">Refrigerators</a>
+                            <a href="#" class="dropdown-item">Kitchen Appliances</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link" id="men">Men</a>
+                        <div class="dropdown-menu" aria-labelledby="men">
+                            <a href="#" class="dropdown-item">Clothing</a>
+                            <a href="#" class="dropdown-item">Ethnic wear</a>
+                            <a href="#" class="dropdown-item">Top wear</a>
+                            <a href="#" class="dropdown-item">Watches</a>
+                            <a href="#" class="dropdown-item">Inner wear</a>
+                            <a href="#" class="dropdown-item">Bottom wear</a>
+                            <a href="#" class="dropdown-item">Footwear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link" id="women">Women</a>
+                        <div class="dropdown-menu" aria-labelledby="women">
+                            <a href="#" class="dropdown-item">Clothing</a>
+                            <a href="#" class="dropdown-item">Ethnic wear</a>
+                            <a href="#" class="dropdown-item">Footwear</a>
+                            <a href="#" class="dropdown-item">Beauty & Grooming</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link" id="books">Books</a>
+                        <div class="dropdown-menu" aria-labelledby="books">
+                            <a href="#" class="dropdown-item">Entrance Exams</a>
+                            <a href="#" class="dropdown-item">Academics</a>
+                            <a href="#" class="dropdown-item">Self Help</a>
+                            <a href="#" class="dropdown-item">E-Learning</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a href="#" class="nav-link" id="furnitures">Home & Furnitures</a>
+                        <div class="dropdown-menu" aria-labelledby="furnitures">
+                            <a href="#" class="dropdown-item">Kitchen,Cookware</a>
+                            <a href="#" class="dropdown-item">Beds</a>
+                            <a href="#" class="dropdown-item">Sofa</a>
+                            <a href="#" class="dropdown-item">furnitures</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- sign in/up -->
+    <!-- Modal -->
+    <div class="modal fade" id="signIn-Up" tabindex="-1" role="dialog" aria-labelledby="signIn/Up" aria-hidden="true">
+        <div class="modal-dialog mw-360" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="nav nav-tabs">
+                        <a href="#sign-in" class="nav-item nav-link active" data-toggle="tab" role="tab" aria-selected="true">Sign In</a>
+                        <a href="#sign-up" class="nav-item nav-link" data-toggle="tab" role="tab" aria-selected="false">Sign Up</a>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Sign in -->
+                        <div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="sign-in">
+                            <form class="mt-4 mb-2">
+                                <div class="input-group my-3">
+                                    <input type="email" id="text" class="form-control" placeholder="Email / Phone"><i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" id="password" class="form-control" placeholder="Password"><i class="fas fa-lock"></i>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                                    </div>
+                                    <div><a href="#" data-toggle="modal" data-target="#modalForgotPassword" data-dismiss="modal" aria-hidden="true">Forgot password?</a></div>
+                                </div>
+                                <button class="btn btn-theme btn-block mt-2 btn-rounded" type="button" id="signIn">Sign In</button>
+                            </form>
+                        </div>
+                        <!-- Sign up -->
+                        <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up">
+                            <form class="mt-4 mb-2" id="signUpForm">
+                                <div class="input-group my-3"><input type="text" id="sFName" class="form-control" placeholder="Name"><i class="fas fa-user"></i></div>
+                                <div class="input-group"><input type="email" id="sEmail" class="form-control" placeholder="E-mail"><i class="fas fa-envelope"></i></div>
+                                <div class="input-group my-3"><input type="number" id="sPhone" class="form-control" placeholder="Phone number"><i class="fas fa-phone-alt"></i></div>
+                                <div class="input-group"><input type="password" class="form-control" id="sPassword" placeholder="Password"><i class="fas fa-lock"></i></div>
+                                <button class="btn btn-theme mt-3 btn-block" type="button" id="signUp">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center my-5">
+        <div class="row">
+            <div class="col-sm">
+                <a href="dummy.html"><img src="img/Samsung.png" class="img-company" alt="Samsung"><br>
+                    <p>Samsung</p>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="dummy.html"><img src="img/Asus.jpg" class="img-company" alt="Asus"><br>
+                    <p>Asus</p>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="dummy.html"><img src="img/Lava.jpg" class="img-company" alt="Lava"><br>
+                    <p>Lava</p>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="dummy.html"><img src="img/Motorola.png" class="img-company" alt="Motorola"><br>
+                    <p>Motorola</p>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="dummy.html"><img src="img/iPhone.jpg" class="img-company" alt="Samsung"><br>
+                    <p>iPhone</p>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6 col-sm">
+                <a href="mobiles-m01.html"><img src="img/m01.jpg" class="img-mobile" alt="">
+                    <p>Samsung Galaxy M01<br>13MP + 2MP<br>₹9,099</p>
+                </a>
+            </div>
+            <div class="col-6 col-sm">
+                <a href="product_detail.html"><img src="img/m01.jpg" class="img-mobile" alt="">
+                    <p>Asus ROG <br>Snapdragon 865+<br>₹49,999</p>
+                </a>
+            </div>
+            <div class="col-6 col-sm">
+                <a href="product_detail.html"> <img src="img/m01.jpg" class="img-mobile" alt="">
+                    <p>Lava A1<br>24MP + 8MP<br>₹6601</p>
+                </a>
+            </div>
+            <div class="col-6 col-sm">
+                <a href="product_detail.html"><img src="img/m01.jpg" class="img-mobile" alt="">
+                    <p>Motorola G4 plus<br>16MP | 5MP<br>₹5999</p>
+                </a>
+            </div>
+            <div class="col-6 col-sm">
+                <a href="product_detail.html"><img src="img/m01.jpg" class="img-mobile" alt="">
+                    <p>Lenovo K8 Note<br>13MP + 13MP<br>₹6999</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-theme pt-4 mt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md mx-auto">
+                    <h5 class="font-weight-bold mt-3 mb-4 te">ABOUT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <!-- <hr class="bg-white w-100 d-md-none"> -->
+                <div class="col-6 col-sm-4 col-md mx-auto">
+                    <h5 class="font-weight-bold mt-3 mb-4">HELP</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Payments</a>
+                        </li>
+                        <li>
+                            <a href="#!">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#!">Cancellation and Returns</a>
+                        </li>
+                        <li>
+                            <a href="#!">Report an issue</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="bg-white w-100 d-sm-none">
+                <div class="col-6 col-sm-4 col-md mx-auto">
+                    <h5 class="font-weight-bold mt-3 mb-4">POLICY</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Return Policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Time of use</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="bg-white w-100 d-none d-sm-block d-md-none">
+                <div class="col-6 col-sm-4 col-md mx-auto">
+                    <h5 class="font-weight-bold mt-3 mb-4">Mail us:</h5>
+                    <p>Ghost-Gang, Berhampur</p>
+                </div>
+                <!-- <hr class="clearfix w-100 d-md-none"> -->
+                <div class="col-6 col-sm-4 col-md mx-auto">
+                    <h5 class="font-weight-bold mt-3 mb-0">Registered office</h5>
+                    <p>Office address</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
